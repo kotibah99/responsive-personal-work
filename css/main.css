@@ -1,0 +1,519 @@
+
+
+/*start global rules*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+
+}
+/*end global rules*/
+
+
+
+/*start header*/
+.header
+{
+    background-image:url('../images/09.jpg');
+    background-size: cover;/*تاخذ الصورة حجمها*/
+    min-height: 400px;
+    position: relative;
+}
+.header .overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(0,168,255,.5);
+}
+.header .overlay h1
+{
+    font-size: 60px;
+    margin-top:100px;
+}
+.header .overlay .plan
+{
+    border: 4px solid #fff;
+    font-size: 24px;
+    width: 48%;
+    float: left;
+    padding: 20px;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.header .overlay .order
+{
+    border: 4px solid #fff;
+    font-size: 24px;
+    padding: 20px;
+    margin: 30px 1% 0px;
+}
+
+@media(max-width:420px)/*custom not found in bootstrap*/
+{ 
+    h1{
+        margin-top: 20px !important;
+    }
+    .header .overlay .plan
+    {
+        float: none;
+        margin: 0 auto 20px;
+        font-size: 22px;
+    }
+  
+}
+@media(max-width:767px)/*mobile phone&tablet rules*/
+{ 
+    .header .overlay .plan
+    {
+        float: none;
+        margin: 0 auto 20px;
+        font-size: 22px;
+    }
+    .responsive-phargraph
+    {
+        text-align: center;
+
+        font-size: 18px !important;
+    }
+
+}
+/*end header*/
+
+/*start features*/
+.features .feat
+{ 
+    color: #555;
+    padding: 0 20px 0 0;
+    margin-bottom: 20px;
+
+}
+.features .feat p
+{
+    line-height: 1.6;
+    margin: 0;
+
+}
+.features .feat h2{
+    margin: 10px 0 5px;
+}
+
+.features .h1{
+    font-size: 50px;
+    color: #555;
+}
+@media(max-width:767px)
+{
+    .features .feat
+    {
+        text-align: center;
+
+    }
+
+
+}
+@media(min-width:768px)
+{
+    .features .feat:first-of-type/*the first box*/
+    {
+       width: 100%; 
+       
+    }
+    .features .feat:not(:first-of-type)
+    {
+       width: 50%; 
+    }
+
+
+}
+@media(min-width:992px)
+{
+    .features .feat
+    {
+        width: 33.3333%;
+
+    }
+
+}
+/*end features*/
+
+/*start about*/
+.about-us
+{
+    background-color: #ececec;
+    padding: 30px 0
+}
+.about-us .h1{
+    font-size: 50px;
+    color: #848484;
+    text-align: center;
+
+}
+.about-us .responsive-phargraph
+{
+    color: #777;
+    font-size:22px;
+
+}
+.responsive-phargraph
+{
+    line-height: 1.8;
+}
+/*end about*/
+/**************************************************************************************/
+
+/*start ourwork*/
+@media(min-width:1200px)
+{
+    .ourwork .img
+{
+    width: 25%;
+
+}
+}
+@media(max-width:767px)
+{
+    .ourwork .img{
+        width:100%;
+    }
+}
+@media(min-width:992px)
+{
+    .ourwork .img{
+        width:33.3333%;
+    }
+}
+
+/*end ourwork*/
+/****************************************************************************/
+/*start pricing-table*/
+.pricing-table
+{
+    background-color: #444;
+    color: #fff;
+    padding: 50px 0;
+}
+.pricing-table .h1{
+    margin: 0 0 20px;
+    font-size:50px;
+}
+.pricing-table .pricing-plan
+{
+    border: 3px solid #fff;
+    padding:20px 0;
+    position: relative;
+
+}
+.pricing-table .pricing-plan h3
+{
+    margin: 0 0 10px;
+    font-size: 30px;
+}
+.pricing-table .pricing-plan .pricing
+{
+    display: inline-block;
+    margin: 0 0 10px;
+    font-size: 26px;
+    color: #aaa;
+}
+.pricing-table .pricing-plan ul
+
+{
+    line-height: 2;
+    font-size: 22px;
+}
+.classic-list
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+@media(min-width:768px)
+{
+    .pricing-table .pricing-plan
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+@media(min-width:992px)
+{
+    .pricing-table .pricing-plan:not(.ultimate)/*ماعدا الصف الاخير*/
+    {
+        margin-right: 1%;
+
+    }
+    .pricing-table .pricing-plan
+    {
+        width: 32.66666%;
+    }
+    .pricing-table .pricing-plan.plus
+    {
+        left: 33.66666%;
+
+    }
+    .pricing-table .pricing-plan.premium
+    {
+        right:33.66666%;
+    }
+
+
+}
+/*end pricing-table*/
+/************************************************************************************/
+/*start what-say*/
+
+
+.they-say
+{
+    padding: 50px 0px;
+}
+@media(min-width:768px)
+{
+    .they-say .person-say:first-of-type{
+        width: 100%;
+    }
+    .they-say .person-say:not(:first-of-type){
+        width: 49%;
+       
+    }
+  
+}
+@media(min-width:992px)
+{
+    .they-say .person-say:first-of-type{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .they-say .person-say:not(:first-of-type){
+        width: 50%;
+       
+    }
+
+
+}
+.they-say .h1{
+    font-size: 50px; 
+    margin: 0 0 20px;
+    color: #555;
+}
+.they-say .person-say
+{
+    background-color: #eee;
+    padding:20px;
+    margin: 0 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.they-say .person-say h3{
+    margin: 0 0 10px;
+}
+.they-say .person-say p
+{ 
+    margin-left: 20px;
+    margin: 0;
+    line-height: 1.7;
+
+}
+
+
+.they-say .person-say:first-of-type{
+    width: 50%;
+    margin-left: 25%;
+}
+.they-say .person-say:not(:first-of-type){
+    width: 50%;
+   
+}
+/*end what-say*/
+/**************************************************************/
+/*start information*/
+.information
+{
+    background-color: #ececec;
+    padding: 30px 0;
+    font-size:18px;
+}
+.information .h1{
+    font-size: 50px;
+    color: #848484;
+    text-align: center;
+
+}
+.information .info-list li
+{
+    display: inline-block;
+    background-color: #ddd;
+    padding: 10px;
+    padding: 15px;
+    font-size: 22px;
+cursor: pointer;/*عند التقريب عليها يتغير المؤشر*/
+
+}
+.information .info-content
+{
+    margin-bottom: 30px;
+}
+.information .info-content>div
+{
+    padding:10px;
+    background-color: #fff;
+    line-height: 2;
+}
+.information .info-content>div:not(:first-of-type)
+{
+    display:none;
+}
+.information .info-list li.selected
+{
+    background-color: #fff;
+    color: #22a9bd;
+}
+@media(max-width:767px)
+{
+    .information .info-list li
+    {
+        display:block;
+    }
+}
+
+/*end information*/
+/**************************************************************/
+/*start footer*/
+.footer
+{
+    background-color: #333;
+    color: #eee;
+}
+.footer .copyright,
+.footer .design
+{
+ padding: 20px;
+ text-align: center;
+}
+/*mobile media*/
+@media(max-width:767px)
+{
+    .footer .copyright,
+    .footer .design
+    {
+        width:100%;
+    }
+}
+/*mobile media*/
+
+@media(min-width:768px)
+{
+    .footer .copyright,
+    .footer .design
+    {
+        width:50%;
+
+    }
+}
+/*end footer*/
+
+
+
+
+@media(max-width:767px)/*mobile phone&tablet rules*/
+{ 
+    .visible-xs{
+        display: block !important;
+
+    }
+
+}
+@media(min-width:768px)/*small screen rules*/
+{ 
+    .container{
+        width: 780px;
+    }
+    .visible-sm{
+        display: block !important;
+
+    }
+   
+}
+@media(min-width:992px)/*medium screen rules*/
+{
+    .container{
+        width: 1000px;
+    }
+    .visible-md{
+        display: block !important;
+
+    }
+   
+}
+@media(min-width:1200px)/*large screen rules*/
+{
+    .container{
+        width: 780px;
+    }
+    .visible-lg{
+        display: block !important;
+
+    }
+   
+}
+
+/*start my Framework*/
+.container{
+    margin:auto;
+}
+ .text-center{
+     text-align:center;
+
+ }
+ .clearfix
+ {
+     clear: both;
+ }
+ .visible-xs,
+ .visible-sm,
+ .visible-md,
+ .visible-lg
+ {
+     display: none;
+ }
+ .float-left
+ {
+     float: left;
+ }
+ .float-right
+ {
+     float: right;
+ }
+ .h1
+ {
+     font-size: 2em;
+ }
+ .responsive-img
+ {
+     width:100%;
+ }
+ .img-circle
+ {
+     border-radius: 50%;
+ }
+ .img-thumbnail
+ {
+     padding: 3px;
+     background-color: #fff;
+     border: 1px solid #ccc;
+ }
+/*end my Framework*/
+
+
+
+
+
+
+
+
+
